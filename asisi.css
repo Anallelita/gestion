@@ -1,0 +1,35 @@
+.h1{
+	font-family:Arial;
+	font-size: 30px;
+	color: inherit;
+	background-color: #BCA4A4;
+	width: auto;
+
+}
+.centradoazulito{
+	font-family: verdana;
+	font-size: 20px;
+	text-align: center;
+	background-color:#C5D3CF;
+	height: 80%;
+	align-items: center;
+
+}
+.longitud{
+	width: 50px;
+	border: 0px;
+	background-color: antiquewhite;
+}
+.otro{
+	background-color: #CAD9BB;
+	font-size: 20px;
+}
+.title{
+	font-family: verdana;
+	font-size: 19.8px;
+	text-align: center;
+	background-color:#8C7E93;
+	height: 20%;
+	align-items: center;
+
+}

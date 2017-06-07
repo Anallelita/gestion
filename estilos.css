@@ -1,0 +1,43 @@
+php{
+	font-size: 16px;
+}
+.social{
+	position: fixed;
+	right: 0;
+	top: 35%;
+	font-size: 1.5rem;
+	display: flex;
+    flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
+}
+.icon{
+	color: white;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+   transition: all .5s;	
+	
+}
+.icon-facebook{
+	background: #3C15BD;
+	border-radius: 1rem 0 0 0;
+}
+.icon-twitter{
+	background: #4FBFE7 ;
+}
+.icon-youtube{
+	background: #ED2629;
+}
+.icon-instagram{
+	background: #C56421;
+}
+.icon-google{
+	background: #F16009;
+	border-radius: 1rem 0 0 0;
+}
+.icon:hover{
+	padding-right: 3rem;
+	border-radius: 1rem 0 0 1rem;
+box-shadow: 0 0 .5rem	rgba(0, 0, 0, 0.42);
+}

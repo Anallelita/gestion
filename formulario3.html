@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/> 
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<title>Documento sin título</title>
+</head>
+
+<body bgcolor="#D1C5C5">
+
+
+
+	<form name="pdf" method="post" action="generador2.php" accept-charset="UTF-8">
+<table  class="title" align="center" bgcolor="#E1D0D1">
+  <tbody>
+    <tr>
+      <td><h1 align="center" > Evaluación de la Respuesta ante Emergencias y Evacuación </h1></td>
+    </tr>
+   
+    
+  </tbody>
+</table>
+
+		
+
+<table  class="centradoazulito" align="center">
+  <tbody>
+    <tr>
+      <td >Tipo de emergencia:  <br/>
+              
+       <textarea name="emergencia" id="emergencia" cols="75" rows="2"></textarea>
+      </td>
+    </tr>
+    
+    <tr>
+    <td > Número de seguimiento Reporte de Emergencia /Conato: <br/>
+              
+       <textarea name="segui" id="segui" cols="75" rows="2"></textarea>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="centradoazulito" align="center">
+  <tbody>
+    <tr>
+      <td>Día del evento:  <br/>
+              
+       <textarea name="eve" id="eve" cols="23" rows="1"></textarea></td>
+      <td>Tiempo:  <br/>
+              
+       <textarea name="tien" id="tien" cols="23" rows="1"></textarea></td>
+      <td>Localizacón:  <br/>
+              
+       <textarea name="local" id="local" cols="23" rows="1"></textarea></td>
+    </tr>
+  </tbody>
+</table>
+<table class="centradoazulito" align="center">
+  <tbody>
+    <tr>
+      <td>Descripción del Evento:<br/>
+              
+       <textarea name="desc" id="desc" cols="75" rows="5"></textarea></td>
+    </tr>
+    <tr>
+      <td>De un Resumen de cómo se desarrollo la Respuesta :<br/>
+              
+       <textarea name="resu" id="resu" cols="75" rows="5"></textarea></td>
+    </tr>
+  </tbody>
+</table>
+<table class="centradoazulito" align="center" border="0.01">
+  <tbody>
+    <tr>
+     
+      <td align="justify" width="370">Personas evacuadas:  </td>
+      <td><input type="radio" name="sex" id="hombre" value="X">
+          <label for="hombre">Parcial</label></td>
+      <td>  <input type="radio" name="sexo" id="mujer" value="X">
+          <label for="mujer">Total</label>
+</td>
+    </tr>
+  </tbody>
+</table>
+<br/>
+
+<table class="centradoazulito" align="center">
+  <tbody>
+    <tr>
+      <td>Se les llamó a los responsables del área afectada?
+
+
+</td>
+      <td><input type="radio" name="llamo" id="lamo" value="X">
+          <label for="lamo">Si</label></td>
+      <td><input type="radio" name="amo" id="lam" value="X">
+      <label for="lam">No</label></td>
+    </tr>
+    <tr>
+      <td>Se encontraron a los responsables de atender  la emergencia?</td>
+      <td><input type="radio" name="atender" id="atende" value="X">
+          <label for="atende">Si</label>
+          
+</td>
+      <td><input type="radio" name="ander" id="aten" value="X">
+      <label for="aten">No</label></td>
+    </tr>
+    <tr>
+      <td>Se solicitó apoyo de Protección Civil?</td>
+      <td><input type="radio" name="civil" id="civi" value="X">
+          <label for="civi">Si</label>
+          
+</td>
+      <td><input type="radio" name="ivil" id="civ" value="X">
+      <label for="civ">No</label></td>
+    </tr>
+    <tr>
+      <td>Se solicitó apoyo de los Bomberos?</td>
+      <td><input type="radio" name="bomberos" id="bombe" value="X">
+        <label for="bombe">Si</label>
+          
+</td>
+      <td><input type="radio" name="bombe" id="bombon" value="X">
+      <label for="bombon">No</label></td>
+    </tr>
+    <tr>
+      <td>
+Se solicitó apoyo de Corporaciones de 1os. Auxilios?</td>
+      <td><input type="radio" name="auxilio" id="auxil" value="X">
+        <label for="auxil">Si</label>
+          
+</td>
+      <td><input type="radio" name="axilio" id="auxi" value="X">
+      <label for="auxilio">No</label></td>
+    </tr>
+    <tr>
+      <td>Estaba presente la prensa?
+</td>
+      <td><input type="radio" name="prensa" id="prens" value="X">
+      <label for="prens">Si</label></td>
+          
+      <td><input type="radio" name="presa" id="pren" value="X">
+      <label for="pren">No</label></td>
+    </tr>
+    <tr>
+      <td>La dirección  fue notificada?</td>
+      <td><input type="radio" name="notificada" id="notifica" value="X">
+        <label for="notificada">Si</label></td>
+          
+      <td><input type="radio" name="tificada" id="notifi" value="X">
+          <label for="notifi">No</label></td>
+    </tr>
+    <tr>
+      <td>Se requiere seguimiento?</td>
+      <td><input type="radio" name="requiere" id="requi" value="X">
+        <label for="requie">Si</label></td>
+          
+
+      <td><input type="radio" name="require" id="req" value="X">
+          <label for="req">No</label></td>
+    </tr>
+  </tbody>
+</table>
+<br/>
+<table class="centradoazulito" align="center">
+  <tbody>
+    <tr>
+      <td>Comentarios :<br/>
+              
+      <textarea name="come" id="come" cols="75" rows="5"></textarea></td>
+    </tr>
+</tbody>
+</table>
+
+<table class="centradoazulito" align="center" border="0.01">
+  <tbody>
+    <tr>
+     
+      <td align="justify" width="370">Se identificaron deficiencias en el plan :  </td>
+      <td><input type="radio" name="se" id="hom" value="X">
+        <label for="hom">Si</label></td>
+      <td>  <input type="radio" name="so" id="mujr" value="X">
+          <label for="mujr">No</label>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table class="centradoazulito" align="center">
+  <tbody>
+    <tr>
+      <td>Describa las deficiencias  : <br/>
+              
+      <textarea name="defi" id="defi" cols="75" rows="3"></textarea></td>
+    </tr>
+    <tr>
+      <td>Acción sugerida para eliminar deficiencias:<br/>
+              
+      <textarea name="elimi" id="elimi" cols="75" rows="3"></textarea> </td>
+    </tr>
+    <tr>
+      <td>Responsable  de la Acción:<br/>
+              
+      <textarea name="respo" id="respo" cols="75" rows="3"></textarea> </td>
+    </tr>
+    <tr>
+      <td>Tiempo Límite para la Acción:<br/>
+              
+      <textarea name="limite" id="limite" cols="75" rows="3"></textarea> </td>
+    </tr>
+    <tr>
+      <td>Evaluación completada por : <br/>
+              
+      <textarea name="completada" id="completada" cols="75" rows="3"></textarea></td>
+    </tr>
+    <tr>
+      <td>Fecha: 
+            <input type="date">  
+      </td>
+    </tr>
+    
+    <tr>
+      <td><input  align="middle" type="submit" value="Generar"  />
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+        
+
+
+
+
+
+<!--
+<textarea name="" id="" cols="30" rows="10"></textarea>-->
+
+</body>
+</html>

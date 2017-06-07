@@ -1,0 +1,62 @@
+*{
+	mqrgin:0;
+	padding: 0;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+	-box-sizing:border-box;
+		
+}
+.social{
+	
+	
+	position: fixed;
+	left: 0;
+	top: 200px;
+	z-index: 2000;
+}
+
+.social ul{
+	list-style: none;
+	
+}
+.social ul li a{
+	display: inline-block;
+		color: #fff;
+	background: #000;
+	padding: 10px 15px;
+	text-decoration: none;
+-webkit-trasition: 500ms  ease;
+-moz-trasition:500ms ease ;
+-ms-trasition:500ms ease ;
+-o-trasition:500ms  ease;
+trasition: 500ms ease;
+	
+ }
+
+
+.social ul li .icon-facebook{
+	background: #3C15BD;
+	border-radius:  0 1rem 0 0;
+}
+.social ul li .icon-twitter{
+	background: #4FBFE7 ;
+}
+.social ul li .icon-youtube{
+	background: #ED2629;
+}
+.social ul li .icon-instagram{
+	background: #B45FCB;
+}
+
+.social ul li .icon-mail{
+	background: #3DD1AF;
+}
+.social ul li .icon-google{
+	background: #F16009;
+	border-radius:  0  0 1rem 0 ;
+}
+
+.social ul li a:hover{
+	padding: 10px 30px;
+	background: #000;
+}
