@@ -1,7 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="utf-8" />	
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>principal</title>
@@ -60,12 +59,7 @@
 <script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
 <script src="jQueryAssets/jquery-1.11.1.min.js" type="text/javascript"></script>
 <script src="jQueryAssets/jquery.ui-1.10.4.button.min.js" type="text/javascript"></script>
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+
 </head>
 <link href="sga.ico" = type="image/x-icon" rel="shortcut icon"/>
 <link href="s.ico.ico" = type="image/x-icon" rel="shortcut icon"/>
@@ -79,7 +73,7 @@
 <img src="micho.ico" width="150" height="100" style="float:right" />
 <img src="tec.png"  width="120" height="120" style="float:right" />
 <div class="page-header">
-  <h1 align="center">Sistema de Gestión Ambiental</h1>
+  <h1 align="center">Sistema de Gestion Ambiental</h1>
 </div>
 
 <div id="TabbedPanels1" class="TabbedPanels">
@@ -102,11 +96,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="inverseNavbar1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="modificar.html">	INICIO<span class="sr-only">(current)</span></a></li>
-        <li><a href="doc2.pdf">PROC CONTROL PRACTICAS</a></li>
+        <li class="active"><a href="/gestion/modificar.html">	INICIO<span class="sr-only">(current)</span></a></li>
+        <li><a href="#"></a></li>
         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">AREAS<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="area1.html">RESIDUOS</a></li>
+            <li><a href="/gestion/area1.html">RESIDUOS</a></li>
             <li><a href="#">AGUA</a></li>
             <li><a href="#">ENERGIA</a></li>
              <li><a href="#">AUDITORIA AMBIENTAL</a></li>
@@ -116,23 +110,23 @@
       </ul>
       </ul>
   <ul class="nav navbar-nav navbar-right">
-       <li><a href="#v1" class="btn btn-primary" data-toggle="modal" >usuario</a>
+       <li><a href="#v1"  data-toggle="modal" ></a>
 
    <div class="modal fade" id="v1"  role="dialog" data-backdrop="static" data-keyboard="false" >
       <div class="modal-dialog">
         <div class="modal-content">
            <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h3>Usuario: <? echo $_SESSION["usuarioactual"]; ?></h3>
+              <h3> <? echo $_SESSION["usuarioactual"]; ?></h3>
            </div>
            <div class="modal-body">
-              <a href="salir.php">Cerrar Sesion</a>
+              <a href="salir.php"></a>
                <br/>  
                <br>  
-            <a href="formulario2.html">Dar de alta a usuarios</a>
+            <a href="form.php"></a>
                  <br> 
                  <br>   
-            <a href="usuarioS1.php">Todos los usuarios</a>
+            <a href="usuarioS1.php"></a>
        </div>
            <div class="modal-footer">
           <a href="#" data-dismiss="modal" class="btn btn-danger">Cerrar</a>
@@ -145,45 +139,19 @@
        
   </ul>
 <ul class="nav navbar-nav navbar-right">
-       <!-- <li><a href="inventario1.html">INVENTARIO</a></li>-->
+        <li><a href="#"></a></li>
         
-         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">INVENTARIO<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="formulario.html">REPORTE DE SIMULACROS </a></li>
-            <li><a href="formulario3.html">EVALUACION DE LA RESPUESTA ANTE EMERGENCIAS</a></li>
-            <li><a href="inventario3.html">REGISTRO DE AREAS DE RIESGO AMBIENTALES</a></li>
-             <li><a href="doc.pdf">-PROC PARA LA RESPUESTA ANTE EMERGENCIAS</a></li>
-             
-            
-            
-          </ul>
-        </li>
-        
-        
-        
-        
-        
+       
   </ul>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
    <ul class="nav navbar-nav navbar-right">
-       <!-- <li><a href="#">NOTICIAS</a></li>-->
-                 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NOTICIAS<span class="caret"></span></a>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NOTICIAS<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="gratis/agragar.php"> VER NOTICIAS </a></li>
-            <li><a href="agregar.php">PUBLICAR NOTICIA</a></li>
+            <li><a href="agragar.php"> VER NOTICIAS </a></li>
+            <li><a href="/gestion/agregar.php">PUBLICAR NOTICIA</a></li>
             
           </ul>
         </li>
+        
        
   
     </div>
@@ -192,125 +160,189 @@
   <!-- /.container-fluid -->
 </nav>
 <!-- Latest compiled and minified JavaScript -->
-
-
- 
-
-
-
-
-
-
-
 <script src="js/bootstrap.js" type="text/javascript"></script>
-<div id="carousel1" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel1" data-slide-to="1"></li>
-    <li data-target="#carousel1" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner" role="listbox">
-    <div class="item active"><img src="any2.jpg" alt="First slide image" class="center-block" />
-      <div class="carousel-caption">
-        <h3>Sistema de Gestión Ambiental</h3>
-        <p>informate cuida tu mundo
-        cuida tu vida</p>
-      </div>
-    </div>
-    <div class="item"><img src="residuos.png" alt="Second slide image" class="center-block" />
-      <div class="carousel-caption">
-        <h1>Residuos </h1>
-        <p>Residuos de manejo especial</p>
-        <p>Residuos Solidos Urbanos</p>     
-        <p>Residuos  peligrosos</p>      
-      </div>
-    </div>
-    <div class="item"><img src="ene13.png" alt="Third slide image" class="center-block" />
-      <div class="carousel-caption">
-        <h3>AGUA</h3>
-        
-      </div>
+
+<?
+$link = mysqli_connect("localhost", "root", "joseduran");
+mysqli_select_db($link, "post");
+$tildes = $link->query("SET NAMES 'utf8'");
+
+ function quitar($str){
+	$no_permitidos = array("'", "/", "//", "OR", "SELECT", "FROM", "*", "=", " ");
+	return str_replace($no_permitidos, "", $str);
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog Home - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/blog-home.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Blog Entries Column -->
+            <div class="col-md-8">
+<?
+	$sql=mysqli_query($link,"SELECT* FROM post ORDER BY id DESC");	
+				if(isset($_GET['n'])){
+					include('post_solo.php');
+					
+               
+               }else{
+									
+				
+				while ($row=mysqli_fetch_array($sql)){
+?>
+               
+               
+                <h1 class="page-header">
+                    
+                    <small>Informate</small>
+                </h1>
+
+                <!-- First Blog Post -->
+                <h2>
+                    <a href="#"><? echo $row['titulo'];   ?></a>
+                </h2>
+                <p class="lead">
+                    <a href="index.php"><? echo $row['autor'];   ?></a>
+                </p>
+                <p><span class="glyphicon glyphicon-time"> </span><? echo " ".$row['dia']." de ".$row['mes']." del ".$row[anio]; ?></p>
+                <hr>
+                <img class="img-responsive" src="<? echo $row[imagen]?>
+
+		 " height="100" alt="100">
+                <hr>
+                
+                <a class="btn btn-primary" href="agragar.php?n=<?
+				echo $row['id']
+?>">LEER MÁS <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+                <hr>
+
+                </span></a>
+<?
+				}}
+?>
       
-    </div>
-    <div class="item"><img src="global-search-icon-1.jpg" alt="fourd slide image" class="center-block" />
-      <div class="carousel-caption">
-        <h3>Auditoria Ambiental</h3>
+                <hr>
+
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="previous">
+                        <a href="agragar.php">&larr; Regresar</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- Blog Search Well -->
+                <div class="well">
+                    <h4>Buscar Blog </h4>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        </span>
+                    </div>
+                    <!-- /.input-group -->
+                </div>
+
+                <!-- Blog Categories Well -->
+                <div class="well">
+                    <h4> Categorias</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Residuos Sólidos Urbanos</a>
+                                </li>
+                                <li><a href="#">Residuos Peligrosos</a>
+                                </li>
+                                <li><a href="#">Residuos de Manejo especial</a>
+                                </li>
+                                <li><a href="#">Residuos</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.col-lg-6 -->
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Mejoras en la Institución</a>
+                                </li>
+                                <li><a href="#">Reforestacion</a>
+                                </li>
+                                <li><a href="#">Agua</a>
+                                </li>
+                                <li><a href="#">Energia</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.col-lg-6 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+
+                <!-- Side Widget Well -->
+                <div class="well" align="justify">
+                    <h4>Sistema de Gestión Ambiental</h4>
+                    <p align="justify">Establecer los controles de las actividades prácticas de laboratorio y talleres del INSTITUTO, que permitan el control de los residuos peligrosos y de manejo especial generados que garantice la seguridad y la salud dentro de las instalaciones..</p>
+                </div>
+
+            </div>
+
         </div>
-      
+        <!-- /.row -->
+
+        
+
+        <!-- Footer -->
+       
+
     </div>
-  </div>
-  <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel1" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a></div>
-  
-  
-  
-<div id="footer">
-<div class="container">
-	<div class="row">
-		<div class="col-md-3">
-			<h4 class="title">ENLACES RECOMENDADOS</h4>
-			<li><a href="area1.html">Residuos</a></li>
-			<li><a href="">Auditoria Ambiental</a></li>
-			<li><a href=""></a>Noticias</li>
-		</div>
-		<div class="col-md-3">
-		<h4 class="title">INFORMATE</h4>
-		<a href="">¿Quiénes somos?</a>	
-		</div>
-		<div class="col-md-3">
-			<h4 class="title">CONTACTO</h4>
-			<div class="soc">
+    <!-- /.container -->
 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-	<ul>
-	
-		<a  class="icon-old-mobile" target="_blank"> 444983894</a><br><br>
-		
-		<a class="icon-location  "  target="_blank"> Av. Tecnológico No. 201, Zona El Gigante, 61650                                                 Tacambaro, Mich.</a><br><br>
-		
-		
-		<a  class="icon-mail" target="_blank" > miche@gmail.com</a>
-		
-		
-		
-	</ul>
-	
-</div>
+</body>
 
-			
-		</div>
-		<div class="col-md-3">
-			<h4 class="title">LICENCIAS</h4>
-			sistema de gestión ambiental
-		</div>
-	</div>
-</div>
-</footer>
-	
-
-	<div class="copyrigth" align="center">
-		Todos los derechos reservados © 2017 Instituto Tecnológico Superior de Tacámbaro. Av. Tecnológico 201, Localidad Tecario, Tacámbaro Michoacán
-
-	</div>
-
-  
- <!-- <div class="social">
-<ul>
-	<li><a href="https://www.facebook.com/"  class="icon-facebook" target="_blank"></a></li>
-		
-		<li><a href="https://twitter.com/?lang=es" class="icon-twitter" target="_blank" ></a></li>
-		
-		<li><a href="https://www.youtube.com/?gl=MX&hl=es-419" class="icon-youtube" target="_blank" ></a></li>
-		
-		<li><a href="https://www.instagram.com/?hl=es" class="icon-instagram" target="_blank"></a></li>
-		
-		<li><a href="mailto:Ygani36.mi@gmail.com" class="icon-mail" target="_blank" ></a></li>
-		
-		
-		<li><a href="https://www.google.es/" class="icon-google" target="_blank" ></a></li>
-		
-	</ul>
-	
-</div>-->
-<!--menu gris-->
 </html>
