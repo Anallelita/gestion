@@ -28,7 +28,7 @@ $dbname = "sistema_gestion";
       <div class="modal-dialog">
         <div class="modal-content">
            <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="location.href = 'usuarios1.php'">&times;</button>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="location.href='usuarios1.php'">&times;</button>
               <h3>Usuario:</h3>
            </div>
            <div class="modal-body">
@@ -40,12 +40,11 @@ if ($resultados !=NULL) {
 echo "Nombre: ".$resultados['nombre']."<br/><br/> ";
 echo "contraseña: ".$resultados['contraseña']."<br/><br/>";
 echo "Tipo: ".$resultados['Tipo']."<br/><br/>";
-echo "Id: ".$resultados['id']."<br/><br/>";
-$resul=$resultados['Imagen'];
-
- echo "<img src='$resul'>";
-
-
+echo "Id: ".$resultados['id']."<br/><br/>";?>
+ <div>
+  <img src="<?php echo $resultados['Imagen']?>" width="249" height="193"/>
+</div>
+<?php
 echo "---------------------------------------------<br/>";
 }
 else {echo "<br/>No hay más datos!!! <br/>";}
@@ -64,7 +63,7 @@ mysqli_close($link);
                 
        </div>
            <div class="modal-footer">
-          <a href="usuarios1.php" data-dismiss="modal" class="btn btn-danger">Cerrar</a>
+         <!-- <a href="usuarios1.php" data-dismiss="modal" class="btn btn-danger">Cerrar</a>-->
            </div>
       </div>
    </div>

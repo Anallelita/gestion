@@ -9,7 +9,7 @@ class PDF extends FPDF
    function Header()
    {
 
-       $this->Image('logocom.png',10,8,190);
+       $this->Image('form3.png',10,8,190);
 
       $this->SetFont('Arial','B',12);
 
@@ -165,13 +165,12 @@ $pdf->Cell(100,25,date('d/m/Y'),1,1,$align='l');
 
  
 
-
-		
+$pdf->AddPage( );
 	
 		
 
 
-
+$pdf->Image('form5.png' ,'JPG');
 
 
 $pdf->Output("prueba.pdf",'F');

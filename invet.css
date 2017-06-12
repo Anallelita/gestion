@@ -1,0 +1,20 @@
+*{
+	
+}
+.buton{
+	border-radius: 50px;
+	
+	background: #F7B4B5;
+	color:#3D824B;
+	display: inline-block;
+	font-size: 1.25em;
+	margin: 20px;
+	padding: 10px 0px;
+	text-align: center;
+	width: 200px;
+	text-decoration:none;
+	box-shadow: 0px 3px 0px #373c3c;
+	
+	
+}
+

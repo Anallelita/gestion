@@ -6,11 +6,11 @@ $tildes = $link->query("SET NAMES 'utf8'"); //Para que se inserten las tildes co
 
  
 	if ($link) {
-		$ruta = "C:/AppServ/www/gestion/imagenes/";
+		$ruta = "C:/AppServ/www/gestion/";
 opendir($ruta);
 $destino = $ruta.$_FILES['imagen']['name'];
 $ima=$_FILES['imagen']['name'];
-echo "destino  ".$destino."<br>";
+
 copy($_FILES['imagen']['tmp_name'],$destino);
 
 		$nombre= $_POST ['nombre'];
